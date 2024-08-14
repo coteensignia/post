@@ -35,7 +35,7 @@ async function getPosts() {
 async function fetchData() {
   try {
     // Para obtener los posts
-    const datos = await fetch("https://jsonplaceholder.typicode.com/posts");
+    const datos = await fetch("https://jsonplaceholder.typicode.cm");
 
     // Convierte en JSON
     const datosLimpios = await datos.json();
@@ -44,7 +44,7 @@ async function fetchData() {
     return datosLimpios;
   } catch (error) {
     // Error durante la solicitud
-    console.log("Error: " + error);
+    console.log("Error: Lo sentimo hay una error en la solicitud" + error);
 
     // Indica que la solicitud falló
     return null;
