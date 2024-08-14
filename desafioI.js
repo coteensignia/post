@@ -35,7 +35,7 @@ async function getPosts() {
 async function fetchData() {
   try {
     // Para obtener los posts
-    const datos = await fetch("https://jsonplaceholder.typicode.cm");
+    const datos = await fetch("https://jsonplaceholder.typicode.com/posts");
 
     // Convierte en JSON
     const datosLimpios = await datos.json();
